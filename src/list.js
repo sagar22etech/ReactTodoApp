@@ -8,7 +8,7 @@ export default class List extends React.Component{
             <li key={data.id} className="list-group-item">
             <input checked={data.checked}
             type = 'checkbox'
-            style = {{'verticalAlign':'sub'}}
+            style = {{'verticalAlign':'sub'}}readOnly
             />
             <span>{data.name}</span>
             {data.checked ? 
