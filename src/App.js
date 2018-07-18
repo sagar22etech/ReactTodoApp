@@ -9,7 +9,7 @@ class App extends Component {
 
   constructor(props) {
     super(props);
-    this.count=0;
+    this.count = 0;
     this.state = {
       todo: []
     }
@@ -22,8 +22,6 @@ class App extends Component {
     this.setState({ todo: newToDoList });
   }
   editTodo = (newTodo, id) => {
-    console.log(newTodo);
-    
     const checkList = this.state.todo;
     this.state.todo.forEach((li, i) => {
       if (id === li.id.toString()) {
@@ -44,8 +42,6 @@ class App extends Component {
   }
   checkTodo = (id) => {
     const checkList = this.state.todo;
-    console.log(checkList);
-    
     this.state.todo.forEach((li, i) => {
       if (id === li.id.toString()) {
         checkList[i].checked = !checkList[i].checked;
@@ -60,9 +56,7 @@ class App extends Component {
     const list = this.state.todo;
     this.state.todo.forEach((data, i) => {
       if (id === data.id.toString()) {
-        console.log(id+"&&&"+data.id);
         list.splice(i, 1);
-        console.log(list);
         this.setState({ todo: list });
       }
     })
