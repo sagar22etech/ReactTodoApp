@@ -2,13 +2,9 @@
     font-size:22px;
     font-weight:450;
 }
-.complete-tag{
-    display: block;
+#error {
+    border-color: red;
+}
+.badges {
     float: right;
-    font-size: 12px;
-    border: 1px solid;
-    background-color: gray;
-    color:#fff;
-    border-radius: 12px;
-    padding: 2px;
 }
